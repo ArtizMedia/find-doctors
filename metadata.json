@@ -1,0 +1,10 @@
+{
+  "name": "CuraLink - Doctor Appointment Booking System",
+  "description": "Comprehensive healthcare platform connecting patients with verified doctors, featuring real-time slot booking, consultation schedules, clinic holiday management, and dual patient/doctor dashboards.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User account authentication and role metadata",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "format": "email", "description": "User email address" },
+        "role": { "type": "string", "enum": ["PATIENT", "DOCTOR", "ADMIN"], "description": "Access control role" },
+        "emailVerified": { "type": "boolean", "description": "Verification state" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["email", "role"]
+    },
+    "PatientProfile": {
+      "title": "PatientProfile",
+      "description": "Patient demographic, location and medical profile",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Associated user auth ID" },
+        "fullName": { "type": "string", "maxLength": 100 },
+        "mobile": { "type": "string", "maxLength": 20 },
+        "preferredLocation": { "type": "string", "maxLength": 120 },
+        "address": { "type": "string", "maxLength": 250 },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" }
+      },
+      "required": ["userId", "fullName", "mobile"]
+    },
+    "DoctorProfile": {
+      "title": "DoctorProfile",
+      "description": "Doctor profile with medical credentials, clinic details, and verification status",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "fullName": { "type": "string", "maxLength": 100 },
+        "specializationId": { "type": "string" },
+        "specializationName": { "type": "string" },
+        "registrationNumber": { "type": "string", "maxLength": 50 },
+        "experienceYears": { "type": "number" },
+        "clinicName": { "type": "string" },
+        "clinicAddress": { "type": "string" },
+        "district": { "type": "string" },
+        "consultationFee": { "type": "number" },
+        "consultationDuration": { "type": "number" },
+        "verificationStatus": { "type": "string", "enum": ["PENDING", "VERIFIED", "REJECTED", "SUSPENDED"] }
+      },
+      "required": ["userId", "fullName", "specializationId", "registrationNumber", "verificationStatus"]
+    },
+    "Appointment": {
+      "title": "Appointment",
+      "description": "Doctor-patient booked consultation session with status and timestamps",
+      "type": "object",
+      "properties": {
+        "appointmentId": { "type": "string" },
+        "patientId": { "type": "string" },
+        "doctorId": { "type": "string" },
+        "clinicId": { "type": "string" },
+        "appointmentDate": { "type": "string", "format": "date" },
+        "startTime": { "type": "string" },
+        "endTime": { "type": "string" },
+        "timezone": { "type": "string" },
+        "status": { "type": "string", "enum": ["PENDING", "CONFIRMED", "COMPLETED", "CANCELLED", "RESCHEDULED", "NO_SHOW", "REJECTED"] },
+        "consultationFee": { "type": "number" },
+        "paymentStatus": { "type": "string", "enum": ["UNPAID", "PAID"] }
+      },
+      "required": ["appointmentId", "patientId", "doctorId", "appointmentDate", "startTime", "endTime", "status"]
+    },
+    "NotificationItem": {
+      "title": "NotificationItem",
+      "description": "In-app notifications for appointment confirmations, cancellations and schedule alerts",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string", "maxLength": 120 },
+        "message": { "type": "string", "maxLength": 500 },
+        "type": { "type": "string" },
+        "isRead": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "title", "message", "type", "isRead"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "User" },
+      "description": "User credentials and authentication metadata"
+    },
+    "/patientProfiles/{profileId}": {
+      "schema": { "$ref": "PatientProfile" },
+      "description": "Patient records and location configurations"
+    },
+    "/doctorProfiles/{doctorId}": {
+      "schema": { "$ref": "DoctorProfile" },
+      "description": "Public doctor profiles and credential details"
+    },
+    "/appointments/{appointmentDocId}": {
+      "schema": { "$ref": "Appointment" },
+      "description": "Appointments synchronized across patient and doctor applications"
+    },
+    "/notifications/{notificationId}": {
+      "schema": { "$ref": "NotificationItem" },
+      "description": "User notification collection"
+    }
+  }
+}

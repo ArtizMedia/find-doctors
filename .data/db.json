@@ -1,0 +1,683 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "email": "admin@curalink.com",
+      "passwordHash": "$2b$10$lIfTVLRZCtKgH.PXEmt1yerpZldwPLtQhZRkD95JB3xdPy7nFQr4W",
+      "role": "ADMIN",
+      "emailVerified": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "usr-patient-1",
+      "email": "patient@curalink.com",
+      "passwordHash": "$2b$10$lIfTVLRZCtKgH.PXEmt1yerpZldwPLtQhZRkD95JB3xdPy7nFQr4W",
+      "role": "PATIENT",
+      "emailVerified": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "usr-doc-1",
+      "email": "dr.menon@curalink.com",
+      "passwordHash": "$2b$10$lIfTVLRZCtKgH.PXEmt1yerpZldwPLtQhZRkD95JB3xdPy7nFQr4W",
+      "role": "DOCTOR",
+      "emailVerified": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "usr-doc-2",
+      "email": "dr.anita@curalink.com",
+      "passwordHash": "$2b$10$lIfTVLRZCtKgH.PXEmt1yerpZldwPLtQhZRkD95JB3xdPy7nFQr4W",
+      "role": "DOCTOR",
+      "emailVerified": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "usr-doc-3",
+      "email": "dr.rahul@curalink.com",
+      "passwordHash": "$2b$10$lIfTVLRZCtKgH.PXEmt1yerpZldwPLtQhZRkD95JB3xdPy7nFQr4W",
+      "role": "DOCTOR",
+      "emailVerified": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "usr-doc-4",
+      "email": "dr.suresh@curalink.com",
+      "passwordHash": "$2b$10$lIfTVLRZCtKgH.PXEmt1yerpZldwPLtQhZRkD95JB3xdPy7nFQr4W",
+      "role": "DOCTOR",
+      "emailVerified": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "usr-doc-5",
+      "email": "dr.lakshmi@curalink.com",
+      "passwordHash": "$2b$10$lIfTVLRZCtKgH.PXEmt1yerpZldwPLtQhZRkD95JB3xdPy7nFQr4W",
+      "role": "DOCTOR",
+      "emailVerified": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    }
+  ],
+  "patientProfiles": [
+    {
+      "id": "pat-1",
+      "userId": "usr-patient-1",
+      "fullName": "Rahul Sharma",
+      "mobile": "+91 98470 12345",
+      "preferredLocation": "Kochi, Kerala",
+      "address": "Panampilly Nagar, Ernakulam, Kerala",
+      "latitude": 9.9602,
+      "longitude": 76.2941,
+      "dateOfBirth": "1992-05-14",
+      "gender": "MALE",
+      "emergencyContact": "+91 98470 54321",
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    }
+  ],
+  "doctorProfiles": [
+    {
+      "id": "doc-1",
+      "userId": "usr-doc-1",
+      "fullName": "Dr. Vineth Menon",
+      "email": "dr.menon@curalink.com",
+      "mobile": "+91 94471 00111",
+      "specializationId": "spec-cardio",
+      "specializationName": "Cardiology",
+      "qualifications": "MBBS, MD (Gen Med), DM (Cardiology), FACC",
+      "registrationNumber": "KMC-48291",
+      "experienceYears": 16,
+      "clinicId": "clinic-1",
+      "clinicName": "Apex Heart & Wellness Center",
+      "clinicAddress": "MG Road, Marine Drive, Ernakulam",
+      "district": "Ernakulam",
+      "pinCode": "682011",
+      "latitude": 9.9816,
+      "longitude": 76.2798,
+      "consultationFee": 700,
+      "consultationDuration": 15,
+      "profilePhoto": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&auto=format&fit=crop&q=80",
+      "verificationStatus": "VERIFIED",
+      "bio": "Senior Consultant Interventional Cardiologist specializing in preventive cardiology, hypertension, coronary interventions, and cardiac rehabilitation.",
+      "isAvailable": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "doc-2",
+      "userId": "usr-doc-2",
+      "fullName": "Dr. Anita Nair",
+      "email": "dr.anita@curalink.com",
+      "mobile": "+91 94472 00222",
+      "specializationId": "spec-derma",
+      "specializationName": "Dermatology",
+      "qualifications": "MBBS, MD (Dermatology, Venereology & Leprosy), DNB",
+      "registrationNumber": "TMC-31902",
+      "experienceYears": 11,
+      "clinicId": "clinic-2",
+      "clinicName": "DermaCare Skin & Aesthetic Clinic",
+      "clinicAddress": "Pattom Palace Junction, Kowdiar Road",
+      "district": "Thiruvananthapuram",
+      "pinCode": "695004",
+      "latitude": 8.5241,
+      "longitude": 76.9366,
+      "consultationFee": 600,
+      "consultationDuration": 20,
+      "profilePhoto": "https://images.unsplash.com/photo-1594824813689-53e87cb32448?w=400&auto=format&fit=crop&q=80",
+      "verificationStatus": "VERIFIED",
+      "bio": "Expert dermatologist with specialized interest in pediatric dermatology, acne scar therapies, laser dermatology, and chronic dermatological conditions.",
+      "isAvailable": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "doc-3",
+      "userId": "usr-doc-3",
+      "fullName": "Dr. Rahul Pillai",
+      "email": "dr.rahul@curalink.com",
+      "mobile": "+91 94473 00333",
+      "specializationId": "spec-pedia",
+      "specializationName": "Pediatrics",
+      "qualifications": "MBBS, DCH, DNB (Pediatrics), MRCPCH (UK)",
+      "registrationNumber": "KMC-52110",
+      "experienceYears": 14,
+      "clinicId": "clinic-3",
+      "clinicName": "Little Stars Pediatric Care",
+      "clinicAddress": "Mavoor Road, Near Cyberpark",
+      "district": "Kozhikode",
+      "pinCode": "673004",
+      "latitude": 11.2588,
+      "longitude": 75.7804,
+      "consultationFee": 500,
+      "consultationDuration": 15,
+      "profilePhoto": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&auto=format&fit=crop&q=80",
+      "verificationStatus": "VERIFIED",
+      "bio": "Dedicated pediatrician focused on newborn care, developmental assessment, childhood vaccinations, and pediatric asthma management.",
+      "isAvailable": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "doc-4",
+      "userId": "usr-doc-4",
+      "fullName": "Dr. Suresh Varma",
+      "email": "dr.suresh@curalink.com",
+      "mobile": "+91 94474 00444",
+      "specializationId": "spec-ortho",
+      "specializationName": "Orthopedics",
+      "qualifications": "MBBS, MS (Orthopedics), MCh (Ortho)",
+      "registrationNumber": "KMC-61084",
+      "experienceYears": 19,
+      "clinicId": "clinic-4",
+      "clinicName": "City Care Polyclinic & Ortho Center",
+      "clinicAddress": "Round North, Swaraj Round",
+      "district": "Thrissur",
+      "pinCode": "680001",
+      "latitude": 10.5276,
+      "longitude": 76.2144,
+      "consultationFee": 650,
+      "consultationDuration": 20,
+      "profilePhoto": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&auto=format&fit=crop&q=80",
+      "verificationStatus": "VERIFIED",
+      "bio": "Consultant Orthopedic Surgeon offering specialized management in joint replacement, sports injury arthroscopy, and spine rehabilitation.",
+      "isAvailable": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "doc-5",
+      "userId": "usr-doc-5",
+      "fullName": "Dr. Lakshmi Nambiar",
+      "email": "dr.lakshmi@curalink.com",
+      "mobile": "+91 94475 00555",
+      "specializationId": "spec-genmed",
+      "specializationName": "General Medicine",
+      "qualifications": "MBBS, MD (General Medicine)",
+      "registrationNumber": "KMC-73412",
+      "experienceYears": 8,
+      "clinicId": "clinic-5",
+      "clinicName": "Lakeside Family Clinic",
+      "clinicAddress": "Vyttila Mobility Hub Road, Janatha",
+      "district": "Ernakulam",
+      "pinCode": "682019",
+      "latitude": 9.9654,
+      "longitude": 76.3212,
+      "consultationFee": 450,
+      "consultationDuration": 15,
+      "profilePhoto": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&auto=format&fit=crop&q=80",
+      "verificationStatus": "PENDING",
+      "bio": "Primary care physician committed to patient-first preventive healthcare, geriatric wellness, diabetes, and lifestyle disease management.",
+      "isAvailable": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    }
+  ],
+  "clinics": [
+    {
+      "id": "clinic-1",
+      "name": "Apex Heart & Wellness Center",
+      "address": "MG Road, Marine Drive, Ernakulam",
+      "district": "Ernakulam",
+      "pinCode": "682011",
+      "latitude": 9.9816,
+      "longitude": 76.2798,
+      "phone": "+91 484 2345678",
+      "email": "info@apexheartwellness.com",
+      "timezone": "Asia/Kolkata",
+      "createdAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "clinic-2",
+      "name": "DermaCare Skin & Aesthetic Clinic",
+      "address": "Pattom Palace Junction, Kowdiar Road",
+      "district": "Thiruvananthapuram",
+      "pinCode": "695004",
+      "latitude": 8.5241,
+      "longitude": 76.9366,
+      "phone": "+91 471 2548900",
+      "email": "care@dermacarekerala.com",
+      "timezone": "Asia/Kolkata",
+      "createdAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "clinic-3",
+      "name": "Little Stars Pediatric Care",
+      "address": "Mavoor Road, Near Cyberpark",
+      "district": "Kozhikode",
+      "pinCode": "673004",
+      "latitude": 11.2588,
+      "longitude": 75.7804,
+      "phone": "+91 495 2721100",
+      "email": "appointments@littlestarsclinic.in",
+      "timezone": "Asia/Kolkata",
+      "createdAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "clinic-4",
+      "name": "City Care Polyclinic & Ortho Center",
+      "address": "Round North, Swaraj Round",
+      "district": "Thrissur",
+      "pinCode": "680001",
+      "latitude": 10.5276,
+      "longitude": 76.2144,
+      "phone": "+91 487 2420088",
+      "email": "contact@citycarethrissur.org",
+      "timezone": "Asia/Kolkata",
+      "createdAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "clinic-5",
+      "name": "Lakeside Family Clinic",
+      "address": "Vyttila Mobility Hub Road, Janatha",
+      "district": "Ernakulam",
+      "pinCode": "682019",
+      "latitude": 9.9654,
+      "longitude": 76.3212,
+      "phone": "+91 484 2789123",
+      "email": "reception@lakesideclinic.in",
+      "timezone": "Asia/Kolkata",
+      "createdAt": "2026-10-14T07:41:02.302Z"
+    }
+  ],
+  "specializations": [
+    {
+      "id": "spec-cardio",
+      "name": "Cardiology",
+      "description": "Heart, circulation, and vascular health disorders",
+      "icon": "HeartPulse"
+    },
+    {
+      "id": "spec-derma",
+      "name": "Dermatology",
+      "description": "Skin, hair, nails, and cosmetic wellness",
+      "icon": "Sparkles"
+    },
+    {
+      "id": "spec-pedia",
+      "name": "Pediatrics",
+      "description": "Infant, child, and adolescent healthcare",
+      "icon": "Baby"
+    },
+    {
+      "id": "spec-genmed",
+      "name": "General Medicine",
+      "description": "Comprehensive primary care, chronic illnesses & diagnostics",
+      "icon": "Stethoscope"
+    },
+    {
+      "id": "spec-ortho",
+      "name": "Orthopedics",
+      "description": "Bones, joints, ligaments, spine, and musculoskeletal care",
+      "icon": "Bone"
+    },
+    {
+      "id": "spec-neuro",
+      "name": "Neurology",
+      "description": "Brain, spinal cord, nerves, and neurological disorders",
+      "icon": "Brain"
+    },
+    {
+      "id": "spec-ent",
+      "name": "ENT Specialist",
+      "description": "Ear, nose, throat, and sinus conditions",
+      "icon": "Ear"
+    },
+    {
+      "id": "spec-gynec",
+      "name": "Gynecology & Obstetrics",
+      "description": "Women's reproductive health, prenatal & maternity care",
+      "icon": "Activity"
+    }
+  ],
+  "doctorWeeklySchedules": [
+    {
+      "id": "sched-doc-1",
+      "doctorId": "doc-1",
+      "workingDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "openingTime": "09:00",
+      "closingTime": "17:00",
+      "sessions": [
+        {
+          "name": "Morning Session",
+          "startTime": "09:00",
+          "endTime": "13:00"
+        },
+        {
+          "name": "Afternoon Session",
+          "startTime": "14:00",
+          "endTime": "17:00"
+        }
+      ],
+      "breaks": [
+        {
+          "name": "Lunch & Rest Break",
+          "startTime": "13:00",
+          "endTime": "14:00"
+        }
+      ],
+      "consultationDurationMinutes": 15,
+      "bufferDurationMinutes": 5,
+      "maxAppointmentsPerSession": 16,
+      "minAdvanceBookingHours": 1,
+      "maxBookingHorizonDays": 30,
+      "cancellationDeadlineHours": 4,
+      "autoConfirm": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "sched-doc-2",
+      "doctorId": "doc-2",
+      "workingDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "openingTime": "09:00",
+      "closingTime": "17:00",
+      "sessions": [
+        {
+          "name": "Morning Session",
+          "startTime": "09:00",
+          "endTime": "13:00"
+        },
+        {
+          "name": "Afternoon Session",
+          "startTime": "14:00",
+          "endTime": "17:00"
+        }
+      ],
+      "breaks": [
+        {
+          "name": "Lunch & Rest Break",
+          "startTime": "13:00",
+          "endTime": "14:00"
+        }
+      ],
+      "consultationDurationMinutes": 20,
+      "bufferDurationMinutes": 5,
+      "maxAppointmentsPerSession": 16,
+      "minAdvanceBookingHours": 1,
+      "maxBookingHorizonDays": 30,
+      "cancellationDeadlineHours": 4,
+      "autoConfirm": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "sched-doc-3",
+      "doctorId": "doc-3",
+      "workingDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "openingTime": "09:00",
+      "closingTime": "17:00",
+      "sessions": [
+        {
+          "name": "Morning Session",
+          "startTime": "09:00",
+          "endTime": "13:00"
+        },
+        {
+          "name": "Afternoon Session",
+          "startTime": "14:00",
+          "endTime": "17:00"
+        }
+      ],
+      "breaks": [
+        {
+          "name": "Lunch & Rest Break",
+          "startTime": "13:00",
+          "endTime": "14:00"
+        }
+      ],
+      "consultationDurationMinutes": 15,
+      "bufferDurationMinutes": 5,
+      "maxAppointmentsPerSession": 16,
+      "minAdvanceBookingHours": 1,
+      "maxBookingHorizonDays": 30,
+      "cancellationDeadlineHours": 4,
+      "autoConfirm": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "sched-doc-4",
+      "doctorId": "doc-4",
+      "workingDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "openingTime": "09:00",
+      "closingTime": "17:00",
+      "sessions": [
+        {
+          "name": "Morning Session",
+          "startTime": "09:00",
+          "endTime": "13:00"
+        },
+        {
+          "name": "Afternoon Session",
+          "startTime": "14:00",
+          "endTime": "17:00"
+        }
+      ],
+      "breaks": [
+        {
+          "name": "Lunch & Rest Break",
+          "startTime": "13:00",
+          "endTime": "14:00"
+        }
+      ],
+      "consultationDurationMinutes": 20,
+      "bufferDurationMinutes": 5,
+      "maxAppointmentsPerSession": 16,
+      "minAdvanceBookingHours": 1,
+      "maxBookingHorizonDays": 30,
+      "cancellationDeadlineHours": 4,
+      "autoConfirm": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "sched-doc-5",
+      "doctorId": "doc-5",
+      "workingDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "openingTime": "09:00",
+      "closingTime": "17:00",
+      "sessions": [
+        {
+          "name": "Morning Session",
+          "startTime": "09:00",
+          "endTime": "13:00"
+        },
+        {
+          "name": "Afternoon Session",
+          "startTime": "14:00",
+          "endTime": "17:00"
+        }
+      ],
+      "breaks": [
+        {
+          "name": "Lunch & Rest Break",
+          "startTime": "13:00",
+          "endTime": "14:00"
+        }
+      ],
+      "consultationDurationMinutes": 15,
+      "bufferDurationMinutes": 5,
+      "maxAppointmentsPerSession": 16,
+      "minAdvanceBookingHours": 1,
+      "maxBookingHorizonDays": 30,
+      "cancellationDeadlineHours": 4,
+      "autoConfirm": true,
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    }
+  ],
+  "doctorDateOverrides": [],
+  "clinicHolidays": [
+    {
+      "id": "hol-1",
+      "doctorId": "doc-2",
+      "clinicId": "clinic-2",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "isFullDay": true,
+      "reason": "Attending National Dermatology Conference (DERMACON 2026)",
+      "affectedAppointmentIds": [],
+      "createdAt": "2026-10-14T07:41:02.302Z"
+    }
+  ],
+  "slotReservations": [
+    {
+      "id": "res-1",
+      "doctorId": "doc-1",
+      "date": "2026-10-15",
+      "startTime": "10:00",
+      "endTime": "10:15",
+      "status": "BOOKED",
+      "appointmentId": "appt-1",
+      "patientId": "pat-1",
+      "createdAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "RES-1791963667790-xmbc",
+      "doctorId": "doc-1",
+      "date": "2026-10-17",
+      "startTime": "09:00",
+      "endTime": "09:15",
+      "status": "RESERVED",
+      "patientId": "test-patient-A",
+      "expiresAt": "2026-10-14T07:46:07.790Z",
+      "createdAt": "2026-10-14T07:41:07.790Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "appt-1",
+      "appointmentId": "APPT-20261015-0101",
+      "patientId": "pat-1",
+      "doctorId": "doc-1",
+      "clinicId": "clinic-1",
+      "appointmentDate": "2026-10-15",
+      "startTime": "10:00",
+      "endTime": "10:15",
+      "timezone": "Asia/Kolkata",
+      "status": "CONFIRMED",
+      "consultationFee": 700,
+      "paymentStatus": "UNPAID",
+      "patientName": "Rahul Sharma",
+      "patientPhone": "+91 98470 12345",
+      "patientEmail": "patient@curalink.com",
+      "doctorName": "Dr. Vineth Menon",
+      "specializationName": "Cardiology",
+      "clinicName": "Apex Heart & Wellness Center",
+      "clinicAddress": "MG Road, Marine Drive, Ernakulam",
+      "notes": "Routine cardiac follow-up and ECG review.",
+      "idempotencyKey": "seed-idemp-1",
+      "createdAt": "2026-10-14T07:41:02.302Z",
+      "updatedAt": "2026-10-14T07:41:02.302Z"
+    }
+  ],
+  "appointmentHistory": [],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "usr-patient-1",
+      "role": "PATIENT",
+      "title": "Appointment Confirmed",
+      "message": "Your appointment with Dr. Vineth Menon is scheduled for 2026-10-15 at 10:00 AM at Apex Heart & Wellness Center.",
+      "type": "BOOKING_CONFIRMED",
+      "appointmentId": "appt-1",
+      "isRead": false,
+      "createdAt": "2026-10-14T07:41:02.302Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "usr-doc-1",
+      "role": "DOCTOR",
+      "title": "New Booking",
+      "message": "Rahul Sharma booked an appointment for 2026-10-15 at 10:00 AM.",
+      "type": "BOOKING_REQUEST",
+      "appointmentId": "appt-1",
+      "isRead": false,
+      "createdAt": "2026-10-14T07:41:02.302Z"
+    }
+  ],
+  "doctorVerificationRecords": [
+    {
+      "id": "verif-doc-1",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Vineth Menon",
+      "registrationNumber": "KMC-48291",
+      "status": "VERIFIED",
+      "reviewedBy": "usr-admin-1",
+      "notes": "Credentials verified against Kerala State Medical Council registry.",
+      "verifiedAt": "2026-09-14T07:41:02.302Z"
+    },
+    {
+      "id": "verif-doc-2",
+      "doctorId": "doc-2",
+      "doctorName": "Dr. Anita Nair",
+      "registrationNumber": "TMC-31902",
+      "status": "VERIFIED",
+      "reviewedBy": "usr-admin-1",
+      "notes": "Credentials verified against Kerala State Medical Council registry.",
+      "verifiedAt": "2026-09-14T07:41:02.302Z"
+    },
+    {
+      "id": "verif-doc-3",
+      "doctorId": "doc-3",
+      "doctorName": "Dr. Rahul Pillai",
+      "registrationNumber": "KMC-52110",
+      "status": "VERIFIED",
+      "reviewedBy": "usr-admin-1",
+      "notes": "Credentials verified against Kerala State Medical Council registry.",
+      "verifiedAt": "2026-09-14T07:41:02.302Z"
+    },
+    {
+      "id": "verif-doc-4",
+      "doctorId": "doc-4",
+      "doctorName": "Dr. Suresh Varma",
+      "registrationNumber": "KMC-61084",
+      "status": "VERIFIED",
+      "reviewedBy": "usr-admin-1",
+      "notes": "Credentials verified against Kerala State Medical Council registry.",
+      "verifiedAt": "2026-09-14T07:41:02.302Z"
+    }
+  ],
+  "auditLogs": []
+}
